@@ -69,7 +69,7 @@ app.get("/get/image", (req, res) => {
 
 app.get("/generate", (req, res) => {
         try {
-            const response = axios.post('http://localhost:5000/detect_objects', {
+            const response = axios.post('https://inference-model-j8rvtkimy-keyzarrasyas-projects.vercel.app//detect_objects', {
                 image_path: req.query.path,
             });
             console.log("Successfull");
